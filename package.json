@@ -1,0 +1,18 @@
+{
+  "name": "hono-deploy",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "tsc",
+    "deploy": "vercel",
+    "vercel-build": "echo hello"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "hono": "^4.6.12",
+    "tsc-alias": "^1.8.10"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
