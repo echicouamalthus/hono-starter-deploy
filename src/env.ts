@@ -7,7 +7,7 @@ expand(config())
 const EnvSchema = z.object({
     NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
     PORT: z.coerce.number().default(9999),
-    BASE_URL_API: z.string().url()
+    BASE_API_URL: z.string().url()
 })
 
 export type env = z.infer<typeof EnvSchema>
